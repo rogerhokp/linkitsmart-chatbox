@@ -1,7 +1,10 @@
-mkdir -p /Media/USB-A1/node6/usr/lib/node/
-cp -r /usr/lib/node/* /Media/USB-A1/node6/usr/lib/node
+BACKUP_FOLER=/Media/USB-A1/node6
 
-mkdir -p /Media/USB-A1/node6/usr/lib/node_modules/
-cp -r /usr/lib/node_modules/* /Media/USB-A1/node6/usr/lib/node_modules
+mkdir -p $BACKUP_FOLER/usr/lib/node/
+cp -r /usr/lib/node/* $BACKUP_FOLER/usr/lib/node
 
-cp /usr/bin/node /Media/USB-A1/node6/
+mkdir -p $BACKUP_FOLER/usr/lib/node_modules/
+cp -r /usr/lib/node_modules/* $BACKUP_FOLER/usr/lib/node_modules
+
+mkdir -p $BACKUP_FOLER/usr/bin/
+cp /usr/bin/node $BACKUP_FOLER/usr/bin/
