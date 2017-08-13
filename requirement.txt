@@ -1,0 +1,2 @@
+pip install --upgrade google-cloud-speech
+mount tmpfs /tmp -t tmpfs -o remount,size=300000k,nosuid,nodev
