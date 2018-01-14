@@ -8,6 +8,20 @@ Mounting the root FS on an SD card
    - Install kmod-fs-ext4
       - `wget http://openwrt.jaru.eu.org/chaos_calmer/ramips/packages/kmod-fs-ext4_3.18.45-1_ramips_24kec.ipk`
       - `opkg install kmod-fs-ext4_3.18.45-1_ramips_24kec.ipk --nodeps`
+      - `wget http://openwrt.jaru.eu.org/chaos_calmer/ramips/packages/kmod-crypto-hash_3.18.45-1_ramips_24kec.ipk`
+      - `opkg install kmod-crypto-hash_3.18.45-1_ramips_24kec.ipk --nodeps`
+      - `wget http://openwrt.jaru.eu.org/chaos_calmer/ramips/packages/kmod-lib-crc16_3.18.45-1_ramips_24kec.ipk`
+      - `opkg install kmod-lib-crc16_3.18.45-1_ramips_24kec.ipk --nodeps`
+      - `wget http://openwrt.jaru.eu.org/chaos_calmer/ramips/packages/kmod-usb-storage-extras_3.18.45-1_ramips_24kec.ipk`
+      - `opkg install kmod-usb-storage-extras_3.18.45-1_ramips_24kec.ipk --nodeps`
+ 
+ 
+Check module loaded 
+```
+modprobe sd_mod
+modprobe usb-storage
+modprobe ext4
+```
 - or use vfat instead of ext4
     - `opkg update`
     - `opkg install mkdosfs`
