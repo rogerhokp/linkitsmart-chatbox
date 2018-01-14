@@ -5,6 +5,8 @@ Mounting the root FS on an SD card
 - confirm ext4 support
    - `cat /proc/filesystems`
    - `uname -r` check keneral version
-5opkg install kmod-fs-ext4_4.4.46-1_mipsel_24kc.ipk --nodeps
-```
+   - ```
+   wget http://openwrt.jaru.eu.org/chaos_calmer/ramips/packages/kmod-fs-ext4_3.18.45-1_ramips_24kec.ipk
+   opkg install kmod-fs-ext4_3.18.45-1_ramips_24kec.ipk --nodeps
+   ```
  
